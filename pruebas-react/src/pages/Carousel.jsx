@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../App.css';
 import './Default.css'
-import { beasts } from './Dashboard'; 
+import { beasts } from './Beasts'; 
 import EnemyCard from './EnemyCard';
 
 const Carousel = () => {

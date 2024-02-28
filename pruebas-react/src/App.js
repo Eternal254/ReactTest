@@ -9,6 +9,7 @@ import Default from './pages/Default';
 import Carousel from './pages/Carousel';
 import Footer from './pages/Footer';
 
+
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
