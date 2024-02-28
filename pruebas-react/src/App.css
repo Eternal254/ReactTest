@@ -64,6 +64,7 @@ body {
   flex-wrap: wrap; /* Esto permite que las tarjetas se envuelvan a la siguiente línea si no hay suficiente espacio horizontal */
   justify-content: center; /* Centra horizontalmente las tarjetas */
   gap: 20px; /* Espacio entre las tarjetas */
+  margin-bottom: 20px;
 }
 
 
