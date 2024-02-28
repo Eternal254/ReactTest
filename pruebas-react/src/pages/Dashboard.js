@@ -1,7 +1,9 @@
+// Dashboard.js
+import React from 'react'
 import EnemyCard from './EnemyCard'
 import '../App.css'
 
-var beasts = [
+export const beasts = [
     {name: "Dragon", description: "Bestia de gran tamaño con la capacidad de volar y escupir fuego", image: "https://www.nameoftheyear.com/wp-content/uploads/2024/01/image-50.jpeg" },
     {name: "Orco", description: "Criatura musculosa de piel verde, con dientes prominentes, orejas puntiagudas y agresiva", image:"https://img.freepik.com/fotos-premium/guerrero-orco-pelirrojo_880127-330.jpg" },
     {name: "Pegaso", description: "Caballo con alas mamalon xd", image:"https://static.tvtropes.org/pmwiki/pub/images/concordia_pegasus_ravnica_allegiance_art.jpg"},

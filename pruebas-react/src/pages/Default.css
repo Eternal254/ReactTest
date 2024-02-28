@@ -7,3 +7,18 @@ img{
     text-align: center; /* Alinea el contenido al centro */
     margin-top: 50px; /* Margen superior */
 }
+
+.carousel{
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 40px;
+}
+
+.carousel .card img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+}
