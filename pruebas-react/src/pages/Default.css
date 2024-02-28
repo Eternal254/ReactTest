@@ -1,0 +1,9 @@
+img{
+    width: 50%;
+    height: 50%;
+}
+
+.default-container {
+    text-align: center; /* Alinea el contenido al centro */
+    margin-top: 50px; /* Margen superior */
+}

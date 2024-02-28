@@ -1,22 +1,24 @@
 import React from 'react';
 import './App.css';
-import EnemyCard from './EnemyCard';
-import Header from './Header'; 
+import { Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import About from './pages/About';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import Default from './pages/Default';
 
 function App() {
-  var beasts = [
-    {name: "Dragon", description: "Bestia de gran tamaño con la capacidad de volar y escupir fuego", image: "https://www.nameoftheyear.com/wp-content/uploads/2024/01/image-50.jpeg" },
-    {name: "Orco", description: "Criatura musculosa de piel verde, con dientes prominentes, orejas puntiagudas y agresiva", image:"https://posadaelultimohogar.files.wordpress.com/2015/01/orco.jpg?w=640" }
-  ];
-
   return (
-    <div className='container'>
-      <Header />
-      {beasts.map((beast, index) => (
-        <div className="card" key={index}>
-          <EnemyCard name={beast.name} description={beast.description} image={beast.image} />
-        </div>
-      ))}
+    <div>
+      <h1>Rutas</h1>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path='about' element={<About/>}></Route>
+          <Route path='home' element={<Home/>}></Route>
+          <Route path='dashboard' element={<Dashboard/>}></Route>
+          <Route path='*' element={<Default/>}></Route>
+        </Route>
+      </Routes>
     </div>
   );
 }
